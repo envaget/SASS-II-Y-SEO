@@ -1,0 +1,23 @@
+.burbuja{
+    border-radius: 50%;
+    background: $collor-claro;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+
+
+
+    &:nth-child(1){
+        width: 80px;
+        height: 80px;
+        left: 5%;
+        animation-duration: 3s;
+        animation-delay: 3s;
+    }
+
+
+
+}

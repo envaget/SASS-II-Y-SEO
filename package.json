@@ -1,11 +1,22 @@
 {
-  "name": "proyectobs-pasado-a-sass---copia",
+  "name": "proyecto-con-bootstrap",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/envaget/Bootstrap.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/envaget/Bootstrap/issues"
+  },
+  "homepage": "https://github.com/envaget/Bootstrap#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
 }
