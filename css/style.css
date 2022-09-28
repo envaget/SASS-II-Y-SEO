@@ -1,18 +1,83 @@
-/* Error: expected ")".
- *   ,
- * 2 |     bg-banner:orange;
- *   |                     ^
- *   '
- *   scss\base\maps.scss 2:21  @import
- *   scss\style.scss 3:9       root stylesheet */
+/* MAP GET Y MIXIN */
+.bannertitle h2 {
+  font-size: 60px; }
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ")".\a   \2577 \a 2 \2502      bg-banner:orange;\d\a   \2502                      ^\a   \2575 \a   scss\\base\\maps.scss 2:21  @import\a   scss\\style.scss 3:9       root stylesheet';
-}
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a; }
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; }
+  .bannertitle h2 {
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 20px; }
+  .bannertitle .llamanos {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background: #1A2849;
+    padding: 20px; }
+
+.banner_img {
+  animation: movimiento 2.5s linear infinite; }
+  .banner_imgimg {
+    width: 600px;
+    display: block; }
+
+.burbuja {
+  border-radius: 50%;
+  background: #fff;
+  opacity: .3;
+  position: absolute;
+  bottom: -150;
+  animation: burbujas 3s linear infinite; }
+  .burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s; }
+
+.carousel {
+  margin-bottom: 4rem; }
+  .carouselcaption {
+    bottom: 3rem;
+    z-index: 10; }
+  .carouselitem {
+    height: 32rem; }
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto; }
+
+.bg_animate {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #005C98, #505BDA);
+  position: relative;
+  overflow: hidden; }
+
+.header_nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .header_nav.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0; }
+  .header_navh1 {
+    color: #fff;
+    font-family: 'Gagalin'; }
+  .header_navnav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px; }

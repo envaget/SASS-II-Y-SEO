@@ -14,6 +14,7 @@
 
 @import "./componentes/carousel";
 
+
 .contenedor{
     width: 90%;
     max-width: 1200px;
@@ -23,11 +24,12 @@
 .bg_animate{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #005C98, #505BDA);
+    background: linear-gradient(to right, map-get($paleta,azulclaro), map-get($paleta, violeta) );
     position: relative;
     overflow: hidden;
 }
-  
+
+
 .header_nav{
     width: 100%;
     position: absolute;
@@ -42,15 +44,15 @@
     }
 
     &h1{
-        color: #fff;
-        font-family: 'Gagalin';
+        @include estilodetitulo;
     }
 
     &nav a{
-        color: #fff;
+        color: map-get($paleta, blanco );
         text-decoration: none;
         margin-right: 10px;
     }
 
     
 }
+
