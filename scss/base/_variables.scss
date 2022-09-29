@@ -4,6 +4,9 @@ $collor-claro: #fff;
 
 /* MAP GET Y MIXIN */
 
+
+/* --------------------------------------MAP----------------------------------- */
+
 $paleta: (
 blanco:#fff,
 grisclaro:gray,
@@ -11,6 +14,8 @@ colorprincipal:black,
 azulclaro: #005C98,
 violeta:#505BDA,
 );
+
+/* ------------------------------------MIXIN---------------------------------- */
 
 @mixin estilodetitulo {
     color: map-get($paleta , blanco );
