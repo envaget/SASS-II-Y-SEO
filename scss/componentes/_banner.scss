@@ -20,6 +20,15 @@
         padding: 20px;
     }
 
+    &_img{
+        animation: movimiento 2.5s linear infinite;
+    }
+
+
+    &_img{
+        width: 600px;
+        display: block;
+    }
 }
 
 .banner_img{
